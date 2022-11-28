@@ -87,6 +87,23 @@
     onscroll(document, toggleBacktotop)
   }
 
+  on('show.bs.modal', '#exampleModal', function (event) {
+    
+    var button = event.relatedTarget // Button that triggered the modal
+    var recipient = button.dataset['whatever'] // Extract info from data-* attributes
+
+    document.getElementById("exampleModalLabel").innerHTML = recipient
+
+    // If necessary, you could initiate an AJAX request here (and then do the updating in a callback).
+    // Update the modal's content. We'll use jQuery here, but you could use a data binding library or other methods instead.
+    // var modal = this
+    // var modal_title = select('.modal-title');
+    // modal_title.outerHTML='<h5 class="modal-title" id="exampleModalLongTitle">OMG</h5>'
+    // 'new message ' + recipient;
+    // modal.find('.modal-title').text('New message to ' + recipient)
+    // modal.find('.modal-body input').val(recipient)
+  })
+
   /**
    * Mobile nav toggle
    */
