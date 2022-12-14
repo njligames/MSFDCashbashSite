@@ -1,5 +1,5 @@
 
-#!/usr/bin/python
+#!/usr/local/bin/python3
 
 import csv
 
@@ -9,8 +9,8 @@ with open('tickets.csv') as csvfile:
     col=1
     idx=1
     for row in reader:
-        text='<button onclick="initPayPalButton' + str(idx) + '()" type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal' + str(idx) + '" data-whatever="{}">Ticket {}</button>'
-        text_disabled='<button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal' + str(idx) + '" data-whatever="{}" disabled>Ticket {}</button>'
+        text='<button onclick="initPayPalButton' + str(idx) + '()" type="button" class="btn btn-primary btn-custom" data-bs-toggle="modal" data-bs-target="#exampleModal' + str(idx) + '" data-whatever="{}">Ticket {}</button>'
+        text_disabled='<button type="button" class="btn btn-primary btn-custom" data-bs-toggle="modal" data-bs-target="#exampleModal' + str(idx) + '" data-whatever="{}" disabled>Ticket {}</button>'
 
         if 1 == col:
             print('<div class="row justify-content-md-center">')
