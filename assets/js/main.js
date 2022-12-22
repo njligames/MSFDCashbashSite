@@ -87,7 +87,8 @@
     onscroll(document, toggleBacktotop)
   }
 
-  on('show.bs.modal', '#exampleModal', function (event) {
+    /*
+  on('show.bs.modal', '#exampleModal1', function (event) {
 
       var button = event.relatedTarget // Button that triggered the modal
       var recipient = button.dataset['whatever'] // Extract info from data-* attributes
@@ -101,6 +102,7 @@
 
       // document.getElementById("exampleModalBody").innerHTML = html;
   })
+    */
 
   /**
    * Mobile nav toggle
