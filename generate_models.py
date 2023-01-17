@@ -1,6 +1,7 @@
 
 #!/usr/local/bin/python3
 
+import sys
 import csv
 
 txt = """
@@ -82,47 +83,31 @@ txt = """
       <div class="col-xs-1" align="center">
 
 
-
-
-
-        <form
-          target="paypal"
-          action="https://www.paypal.com/cgi-bin/webscr"
-          method="post"
-        >
-          <input type="hidden" name="cmd" value="_s-xclick" />
-          <input type="hidden" name="hosted_button_id" value="{cart_value}" />
+        <form target="paypal" action="https://www.paypal.com/cgi-bin/webscr" method="post">
+          <input type="hidden" name="cmd" value="_s-xclick">
+          <input type="hidden" name="hosted_button_id" value="{cart_value}">
           <table>
-            <tr>
-              <td>
-                <input type="hidden" name="on0" value="Cash Bash Ticket" />Cash Bash
-                Ticket
-              </td>
-            </tr>
-            <tr>
-              <td>
-                <select name="os0">
-                  <option value="Ticket">Ticket $100.00 USD</option>
-                  <option value="Ticket & Chance">Ticket & Chance $105.00 USD</option>
-                </select>
-              </td>
-            </tr>
+              <tr>
+                <td><input type="hidden" name="on0" value="Cash Bash Ticket #2">Cash Bash Ticket #2</td>
+              </tr>
+              <tr>
+                <td>
+                    <select name="os0">
+                      <option value="Ticket">Ticket $100.00 USD</option>
+                      <option value="Ticket & Chance">Ticket & Chance $105.00 USD</option>
+                    </select>
+                </td>
+              </tr>
+              <tr>
+                <td><input type="hidden" name="on1" value="Winner Contact #">Winner Contact #</td>
+              </tr>
+              <tr>
+                <td><input type="text" name="os1" maxlength="200"></td>
+              </tr>
           </table>
-          <input type="hidden" name="currency_code" value="USD" />
-          <input
-            type="image"
-            src="https://www.paypalobjects.com/en_US/i/btn/btn_cart_LG.gif"
-            border="0"
-            name="submit"
-            alt="PayPal - The safer, easier way to pay online!"
-          />
-          <img
-            alt=""
-            border="0"
-            src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif"
-            width="1"
-            height="1"
-          />
+          <input type="hidden" name="currency_code" value="USD">
+          <input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_cart_LG.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
+          <img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
         </form>
 
       </div>
@@ -133,14 +118,15 @@ txt = """
 
 """
 
+filename="cart_values.csv"
+if(len(sys.argv) > 1):
+    filename="cart_values_test.csv"
 
+with open(filename) as csvfile:
+    reader = csv.DictReader(csvfile)
 
-ticket_number = 1 # str(row["ticket_number"])
-cart_value = "Q4NK4BA5NF686" # str(row["cart_value"])
-print(txt.format(ticket_number = ticket_number, cart_value = cart_value))
+    for row in reader:
+        ticket_number=row["ticket_number"]
+        cart_value=row["cart_value"]
 
-# with open('tickets.csv') as csvfile:
-#     reader = csv.DictReader(csvfile)
-#     for row in reader:
-#         print(txt.format(ticket_number = str(row["ticket_number"]), cart_value = str(row["cart_value"])))
-#
+        print(txt.format(ticket_number = ticket_number, cart_value = cart_value))
