@@ -84,30 +84,30 @@ txt = """
 
 
         <form target="paypal" action="https://www.paypal.com/cgi-bin/webscr" method="post">
-          <input type="hidden" name="cmd" value="_s-xclick">
-          <input type="hidden" name="hosted_button_id" value="{cart_value}">
-          <table>
+           <input type="hidden" name="cmd" value="_s-xclick">
+           <input type="hidden" name="hosted_button_id" value="{cart_value}">
+           <table>
               <tr>
-                <td><input type="hidden" name="on0" value="Cash Bash Ticket #2">Cash Bash Ticket #2</td>
+                 <td><input type="hidden" name="on0" value="Cash Bash Ticket #{ticket_number}">Cash Bash Ticket #{ticket_number}</td>
               </tr>
               <tr>
-                <td>
+                 <td>
                     <select name="os0">
-                      <option value="Ticket">Ticket $100.00 USD</option>
-                      <option value="Ticket & Chance">Ticket & Chance $105.00 USD</option>
+                       <option value="Ticket">Ticket $100.00 USD</option>
+                       <option value="Ticket & Chance">Ticket & Chance $105.00 USD</option>
                     </select>
-                </td>
+                 </td>
               </tr>
               <tr>
-                <td><input type="hidden" name="on1" value="Winner Contact #">Winner Contact #</td>
+                 <td><input type="hidden" name="on1" value="Winner Contact #">Winner Contact #</td>
               </tr>
               <tr>
-                <td><input type="text" name="os1" maxlength="200"></td>
+                 <td><input type="text" name="os1" maxlength="200"></td>
               </tr>
-          </table>
-          <input type="hidden" name="currency_code" value="USD">
-          <input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_cart_LG.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
-          <img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
+           </table>
+           <input type="hidden" name="currency_code" value="USD">
+           <input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_cart_LG.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
+           <img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
         </form>
 
       </div>
