@@ -35,7 +35,7 @@ txt = """
         <ol>
           <li>$100.00 Per Ticket. Winner need not be present.</li>
           <li>
-            All numbers will be drawn on September 24th, 2022 at the Mt. Sinai
+            All numbers will be drawn on September 23rd, 2023 at the Mt. Sinai
             Fire Department, Station 1, 133 Mount Sinai Avenue.
           </li>
           <li>
@@ -56,7 +56,7 @@ txt = """
             <strong
               >All tickets will be mailed to the address you put on the
               application once your check clears. Tickets purchased after
-              9/1/2022 can be picked up at the gate with photo ID.</strong
+              9/1/2023 can be picked up at the gate with photo ID.</strong
             >
           </li>
           <li>
@@ -72,11 +72,14 @@ txt = """
             Entertainment, BBQ and drinks will be available during drawing, all
             included with ticket purchase.
           </li>
+          <li>
+            IF LESS THAN 500 TICKETS ARE SOLD, ALL PRIZES WILL BE PRORATED AT 60% OF TOTAL SOLD
+          </li>
         </ol>
         <p>
-          <strong
-            >IF LESS THAN 500 TICKETS ARE SOLD, ALL PRIZES WILL BE PRO-RATED AT
-            60% OF TOTAL SOLD</strong
+          <strong>
+          Enter for a chance to win an additional free ticket for five more dollars, select in drop down.
+            </strong
           >
         </p>
       </div>
