@@ -53,9 +53,8 @@ txt = """
           </li>
           <li>No one under 21 will be admited. NO EXCEPTIONS!!!</li>
           <li>
-            <strong
-              >All tickets will be mailed to the address you put on the
-              application once your check clears. Tickets purchased after
+            <strong>All tickets will be mailed to the address you put on the
+              application once your payment clears. Tickets purchased after
               9/1/2023 can be picked up at the gate with photo ID.</strong
             >
           </li>
