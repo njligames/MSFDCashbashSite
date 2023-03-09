@@ -10,7 +10,7 @@ ticket_number,available
 9,TRUE
 10,TRUE
 11,FALSE
-12,TRUE
+12,FALSE
 13,TRUE
 14,TRUE
 15,TRUE
@@ -75,7 +75,7 @@ ticket_number,available
 74,TRUE
 75,TRUE
 76,TRUE
-77,TRUE
+77,FALSE
 78,TRUE
 79,TRUE
 80,TRUE
@@ -125,7 +125,7 @@ ticket_number,available
 124,TRUE
 125,TRUE
 126,TRUE
-127,TRUE
+127,FALSE
 128,TRUE
 129,TRUE
 130,TRUE
