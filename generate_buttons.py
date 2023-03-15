@@ -29,6 +29,7 @@ filename="tickets.csv"
 if(len(sys.argv) > 1):
     filename="tickets_test.csv"
 
+num_sold=0
 with open(filename) as csvfile:
     reader = csv.DictReader(csvfile)
 
@@ -39,5 +40,8 @@ with open(filename) as csvfile:
         if row['available'].lower() == "true":
             print(available.format(ticket_number = row['ticket_number']))
         else:
+            num_sold = num_sold + 1
             print(disabled.format(ticket_number = row['ticket_number']))
     print('</div>')
+
+# print("number sold = " + str(num_sold))
