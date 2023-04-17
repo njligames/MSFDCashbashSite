@@ -4,7 +4,7 @@ ticket_number,available
 3,FALSE
 4,TRUE
 5,TRUE
-6,TRUE
+6,FALSE
 7,TRUE
 8,FALSE
 9,TRUE
@@ -51,7 +51,7 @@ ticket_number,available
 50,FALSE
 51,TRUE
 52,TRUE
-53,TRUE
+53,FALSE
 54,TRUE
 55,TRUE
 56,TRUE
