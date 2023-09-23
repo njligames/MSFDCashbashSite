@@ -44,4 +44,4 @@ with open(filename) as csvfile:
             print(disabled.format(ticket_number = row['ticket_number']))
     print('</div>')
 
-# print("number sold = " + str(num_sold))
+print("number sold = " + str(num_sold))
